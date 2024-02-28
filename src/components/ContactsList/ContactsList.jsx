@@ -7,7 +7,7 @@ export const ContactsList = ({ contacts, search, delContact }) => {
     <div>
       <ContactsWrapper>
         {contacts
-          .filter(c => c.name.includes(search))
+          .filter(c => c.name.toLowerCase().includes(search.toLowerCase()))
           .map(f => (
             <ContactsCard key={f.id} delContact={delContact} {...f} />
           ))}
