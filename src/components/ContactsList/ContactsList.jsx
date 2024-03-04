@@ -21,3 +21,4 @@ ContactsList.propTypes = {
   search: PropTypes.string,
   delContact: PropTypes.func,
 };
+
